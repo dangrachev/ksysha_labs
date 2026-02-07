@@ -93,8 +93,13 @@ p {
   color: var(--link-text-color);
 }
 
+.image-wrapper {
+  text-align: center;
+}
+
 .image {
-  position: relative;
+  height: 500px;
+  object-fit: cover;
 }
 
 .list {
