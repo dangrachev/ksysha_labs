@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="../assets/normalize.css">
-        <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 
-        <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-        <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet"> -->
-        <link rel="preload" href="../assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2">
-        <link rel="preload" href="../assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet"> -->
+    <link rel="preload" href="./assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="./assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2">
 
-        <title>My site</title>
-    </head>
-    <body>
-        <h1>Some heading</h1>
+    <title>My site</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">MySite</div>
+
+        <nav class="header__nav">
+            <a href="#home" class="nav__link">Home</a>
+            <a href="#about" class="nav__link">About</a>
+            <a href="#contact" class="nav__link">Contact</a>
+        </nav>
+
+    </header>
+    <section class="container">
+        <h1 class="title">Some heading</h1>
 
         <div class="paragraph">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam molestiae iure maxime sed excepturi sunt, reiciendis laborum eaque dolore dignissimos.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit totam assumenda provident.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facilis nesciunt quam minima, possimus molestiae libero asperiores odit tempora ipsa incidunt accusamus delectus quas ad!</p>
         </div>
+        <div class="wrapper">
+            <img class="image" src="./assets/imgs/img2.gif" alt="cat">
+        </div>
 
-        <img class="image" src="./assets/images/img2.gif" alt="cat">
-
-        <div>
-            <h2>The list</h2>
-            <ul>
+        <div class="wrapper">
+            <h2 class="title">The list</h2>
+            <ul class="list">
                 <li>
                     <a class="link" href="https://developer.mozilla.org/" target="_blank">developer.mozilla.org</a>
                 </li>
@@ -41,7 +53,28 @@
                 <li>
                     <a class="link" href="https://www.w3schools.com/" target="_blank">w3schools.com</a>
                 </li>
+                </li>
+                <li>
+                    <a class="link" href="https://leetcode.com/" target="_blank">leetcode.com</a>
+                </li>
+                </li>
+                <li>
+                    <a class="link" href="https://nodejs.org/docs/latest/api/" target="_blank">nodejs.org</a>
+                </li>
+                </li>
+                <li>
+                    <a class="link" href="https://validator.w3.org/#validate_by_input" target="_blank">validator.w3.org</a>
+                </li>
+                </li>
+                <li>
+                    <a class="link" href="https://github.com/" target="_blank">github.com</a>
+                </li>
+                </li>
+                <li>
+                    <a class="link" href="https://about.gitlab.com/" target="_blank">gitlab.com</a>
+                </li>
             </ul>
         </div>
-    </body>
+    </section>
+</body>
 </html>
