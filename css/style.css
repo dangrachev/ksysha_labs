@@ -6,6 +6,11 @@
   --link-text-color: rgb(138, 43, 226);
 }
 
+::selection {
+  background-color: darkorchid;
+  color: white;
+}
+
 * {
   box-sizing: border-box;
 }

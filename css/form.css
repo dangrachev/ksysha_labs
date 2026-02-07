@@ -21,6 +21,18 @@ legend {
     margin-bottom: 15px;
 }
 
+.form-group:nth-child(even) {
+    padding-left: 5px;
+    background-color: #f8fafc;
+    border-left: 2px solid #4a6fa5;
+}
+
+.form-group:nth-child(odd) {
+    padding-left: 5px;
+    background-color: #ffffff;
+    border-left: 2px solid #e74c3c;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -47,6 +59,11 @@ select {
     transition: border-color 0.3s;
 }
 
+input:required, select:required {
+    border-left: 3px solid #e74c3c;
+    background-color: #fff8f8;
+}
+
 input:focus,
 select:focus {
     outline: none;
@@ -69,29 +86,13 @@ select:focus {
     margin-right: 8px;
 }
 
-.btn-submit {
-    background-color: #4a6fa5;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 16px;
+.gender-option input[type="radio"]:checked + label {
+    color: #4a6fa5;
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #e8f0fe;
     border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-
-.btn-submit:hover {
-    background-color: #3a5a8c;
-}
-
-.btn-submit-icon {
-    margin-left: 5px;
-    height: 20px;
-    width: 20px;
+    position: relative;
 }
 
 .hint {
@@ -115,4 +116,43 @@ select:focus {
 
 .interval-option input {
     margin-right: 8px;
+}
+
+.interval-option input[type="checkbox"]:checked + label {
+    color: #27ae60;
+    font-weight: bold;
+    text-decoration: line-through;
+    padding: 5px 10px;
+    background-color: #e8f7ef;
+    border-radius: 4px;
+    position: relative;
+}
+
+.btn-submit {
+    background-color: #4a6fa5;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.btn-submit:hover {
+    background-color: #3a5a8c;
+}
+
+.btn-submit:active {
+    transform: scale(0.95);
+}
+
+.btn-submit-icon {
+    margin-left: 5px;
+    height: 20px;
+    width: 20px;
 }
