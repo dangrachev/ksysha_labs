@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/form.css">
+
+    <title>My site</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">MySite</div>
+
+        <nav class="header__nav">
+            <a href="./index.html" class="nav__link">Главная</a>
+            <a href="#about" class="nav__link">О нас</a>
+            <a href="#contact" class="nav__link">Контакты</a>
+        </nav>
+
+    </header>
+    <main class="container">
+        <h1>Регистрация</h1>
+        <form id="registrationForm">
+            <fieldset>
+                <legend>Личная информация</legend>
+                
+                <div class="form-group">
+                    <label for="name" class="required">Имя</label>
+                    <input type="text" 
+                           id="name" 
+                           name="name" 
+                           required
+                           placeholder="Например: Иван Иванов">
+                </div>
+                
+                <div class="form-group">
+                    <label for="birthdate" class="required">Дата рождения</label>
+                    <input type="date" 
+                           id="birthdate" 
+                           name="birthdate" 
+                           required>
+                    <div class="hint">Формат: ДД.ММ.ГГГГ</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="gender" class="required">Пол</label>
+                    <div class="gender-group">
+                        <div class="gender-option">
+                            <input type="radio" id="male" name="gender" value="male" required>
+                            <label for="male">Мужской</label>
+                        </div>
+                        <div class="gender-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Женский</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="required">Пароль</label>
+                    <input type="password" 
+                           id="password" 
+                           name="password" 
+                           required
+                           placeholder="Не менее 8 символов"
+                           minlength="8">
+                    <div class="hint">Должен содержать не менее 8 символов</div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Контактные данные</legend>
+                
+                <div class="form-group">
+                    <label for="email" class="required">Email</label>
+                    <input type="email" 
+                           id="email" 
+                           name="email" 
+                           required
+                           placeholder="example@mail.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" 
+                           id="phone" 
+                           name="phone"
+                           placeholder="+7 (XXX) XXX-XX-XX">
+                    <div class="hint">Формат: +7 (XXX) XXX-XX-XX</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="contact-time">Удобный интервал для связи</label>
+                    <div class="interval-group">
+                        <div class="interval-option">
+                            <input type="checkbox" id="morning" name="contact-time" value="morning">
+                            <label for="morning">Утро</label>
+                        </div>
+                        <div class="interval-option">
+                            <input type="checkbox" id="day" name="contact-time" value="day">
+                            <label for="day">День</label>
+                        </div>
+                        <div class="interval-option">
+                            <input type="checkbox" id="evening" name="contact-time" value="evening">
+                            <label for="evening">Вечер</label>
+                        </div>
+                        <div class="interval-option">
+                            <input type="checkbox" id="night" name="contact-time" value="night">
+                            <label for="night">Ночь</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <button type="submit" class="btn-submit">
+                Зарегистрироваться
+                <img class="btn-submit-icon" src="./assets/imgs/icon-send.svg" alt="send">
+            </button>
+        </form>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
