@@ -1,0 +1,95 @@
+.content-block {
+  text-align: center;
+  margin: 30px 0;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+.box {
+  width: 300px;
+  height: 220px;
+  margin: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.linear {
+  background: linear-gradient(45deg, red, blue);
+}
+
+.radial {
+  background: radial-gradient(circle, #9500ff, #000000);
+}
+
+.conic {
+  background: conic-gradient(red, yellow, green, blue, red);
+}
+
+.transform2d__ex-1 {
+  background-color: #004cc5;
+}
+.transform2d__ex-1:hover {
+  transform: rotate(10deg) scale(1.1);
+  transition: 0.3s;
+}
+
+.transform2d__ex-2 {
+  background-color: #ffac38;
+}
+.transform2d__ex-2:hover {
+  transform: translateX(20px) skewX(10deg);
+  transition: 0.3s;
+}
+
+.transform3d__ex-1 {
+  background-color: purple;
+  transform-style: preserve-3d;
+}
+.transform3d__ex-1:hover {
+  transform: rotateY(180deg);
+  transition: 2s;
+}
+
+.transform3d__ex-2 {
+  background-color: #ad0000;
+  transform-style: preserve-3d;
+  perspective: 600px;
+}
+.transform3d__ex-2:hover {
+  transform: rotateX(180deg) translateZ(20px);
+  transition: 2s;
+}
+
+.transition__ex-1 {
+  background-color: #2fbaff;
+  color: black;
+  padding: 20px;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
+}
+
+.transition__ex-1:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+.transition__ex-2 {
+  background-color: #9b59b6;
+  color: white;
+  padding: 20px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.transition__ex-2:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(24, 24, 24, 0.698);
+}
